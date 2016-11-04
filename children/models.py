@@ -20,6 +20,6 @@ class Child(models.Model):
 	race = models.CharField(max_length=50)
 	religion = models.CharField(max_length=50)
 	nationality = models.CharField(max_length=50)
-	image = models.ImageField()
+	image = models.ImageField(upload_to='child_selfie')
 
 	# home
