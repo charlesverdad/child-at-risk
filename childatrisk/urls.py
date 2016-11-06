@@ -16,9 +16,9 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from children.views import home, home2
+from children.views import home, childprofile
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^blah', home2),
+    url(r'^childprofile/', childprofile),
     url(r'$', home)
 ]
